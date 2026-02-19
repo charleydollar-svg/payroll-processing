@@ -33,7 +33,6 @@ function processPayroll(employee) {
         netPay: netPay
     };
 }
-
 for (let i = 0; i < employees.length; i++) {
     let payrollInfo= processPayroll(employees[i]);
     console.log(payrollInfo);
