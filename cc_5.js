@@ -27,10 +27,10 @@ function processPayroll(employee) {
     let netPay = calculateTaxes(grossPay);
     return {
         name: employee.name,
-        basePay: basePay,
-        overtimePay: overtimePay,
-        grossPay: grossPay,
-        netPay: netPay
+        basePay: "$" + basePay,
+        overtimePay: "$" + overtimePay,
+        grossPay: "$" + grossPay,
+        netPay: "$" + netPay
     };
 }
 for (let i = 0; i < employees.length; i++) {
