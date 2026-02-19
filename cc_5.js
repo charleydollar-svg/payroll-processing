@@ -34,5 +34,7 @@ function processPayroll(employee) {
     };
 }
 
-let payrollResults = employees.map(processPayroll);
-console.log(payrollResults);
+for (let i = 0; i < employees.length; i++) {
+    let payrollInfo= processPayroll(employees[i]);
+    console.log(payrollInfo);
+}
